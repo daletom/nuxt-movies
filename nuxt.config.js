@@ -100,12 +100,12 @@ export default {
       { hid: 'og:title', property: 'og:title', content: 'Movies App' },
       { hid: 'og:description', property: 'og:description', content: 'Browse Movies, TV Shows and People' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: 'https://movies.jason.codes/' },
+      { hid: 'og:url', property: 'og:url', content: 'https://nuxt-movies-imgix.vercel.app/' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:title', content: 'Movies' },
       { name: 'twitter:description', content: 'Browse Movies, TV Shows and People' },
-      { name: 'twitter:site', content: '@jasonujmaalvis' },
-      { name: 'twitter:creator', content: '@jasonujmaalvis' },
+      { name: 'twitter:site', content: '@letsgoheadless' },
+      { name: 'twitter:creator', content: '@letsgoheadless' },
       { name: 'twitter:image', content: 'https://movies.jason.codes/icon-medium.png' }
     ],
     link: [
