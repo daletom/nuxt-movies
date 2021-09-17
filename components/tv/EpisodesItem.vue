@@ -2,7 +2,9 @@
 <template>
   <div :class="$style.item">
     <div :class="$style.image">
-      <nuxt-picture
+      <nuxt-img
+        provider="imgix"
+        :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
         v-if="poster"
         loading="lazy"
         width="400"

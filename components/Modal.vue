@@ -31,7 +31,9 @@
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen />
-            <nuxt-picture
+            <nuxt-img
+              provider="imgix"
+              :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
               v-if="activeItemImageShown"
               :src="activeItem.src" />
           </div>

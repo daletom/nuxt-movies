@@ -2,8 +2,7 @@ export default {
   modern: process.env.NODE_ENV === 'production',
 
   serverMiddleware: {
-    '/': '~/api/swr.js',
-    '/_ipx': '~/api/ipx.js'
+    '/': '~/api/swr.js'
   },
 
   /*
@@ -54,7 +53,9 @@ export default {
   },
 
   image: {
-    provider: 'ipx',
+    imgix: {
+      baseURL: 'https://nuxt-movies.imgix.net'
+    },
     screens: {
       // _variables.scss
       xsmall: 640,
@@ -66,7 +67,6 @@ export default {
       xlarger2: 1800,
       xlarger3: 2500
     },
-    ipx: {}
   },
 
   /*

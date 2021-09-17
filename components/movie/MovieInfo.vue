@@ -3,7 +3,9 @@
   <div class="spacing" :class="$style.info">
     <div :class="$style.left">
       <div :class="$style.poster">
-        <nuxt-picture
+        <nuxt-img
+          provider="imgix"
+          :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
           v-if="poster"
           width="370"
           height="556"

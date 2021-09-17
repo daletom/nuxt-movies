@@ -31,7 +31,7 @@
       </li>
       <li>
         <a
-          href="https://github.com/addyosmani/nuxt-movies"
+          href="https://github.com/daletom/nuxt-movies"
           target="_blank"
           aria-label="Link to GitHub account"
           rel="noopener">
@@ -40,7 +40,7 @@
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/jason-ujma-alvis"
+          href="https://www.linkedin.com/in/daletom/"
           target="_blank"
           aria-label="Link to LinkedIn account"
           rel="noopener">
@@ -49,7 +49,7 @@
       </li>
       <li>
         <a
-          href="mailto:hello@jason.codes"
+          href="mailto:tom@imgix.com"
           aria-label="Link to Email"
           rel="noopener">
           <EmailIcon />

@@ -5,7 +5,9 @@
       class="credits-item__link"
       :to="{ name: 'person-id', params: { id: person.id } }">
       <div class="credits-item__img">
-        <nuxt-picture
+        <nuxt-img
+          provider="imgix"
+          :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
           v-if="poster"
           loading="lazy"
           width="370"

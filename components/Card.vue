@@ -5,11 +5,12 @@
       class="card__link"
       :to="{ name: `${media}-id`, params: { id: item.id } }">
       <div class="card__img">
-        <nuxt-picture
+        <nuxt-img
           v-if="poster"
+          provider="imgix"
           loading="lazy"
-          width="370"
-          height="556"
+          fit="cover"
+          :modifiers="{ auto: 'format,compress', ch: 'dpr,width' }"
           sizes="xsmall:20vw small:20vw xlarger1:14vw xlarger2:12vw xlarger3:500"
           :alt="name"
           :src="poster" />

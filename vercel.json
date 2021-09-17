@@ -10,5 +10,14 @@
         ]
       }
     }
+  ],
+  "routes": [
+    {
+      "src": "/*",
+        "headers": {
+          "Accept-CH": "DPR, Width, Viewport-Width",
+          "Feature-Policy": "ch-dpr https://nuxt-movies.imgix.net 'self'; ch-width https://nuxt-movies.imgix.net 'self'; ch-viewport-width https://nuxt-movies.imgix.net 'self'"
+        }
+    }
   ]
 }

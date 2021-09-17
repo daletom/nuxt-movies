@@ -3,7 +3,9 @@
   <div class="spacing" :class="$style.info">
     <div :class="$style.left">
       <div :class="$style.poster">
-        <nuxt-picture
+        <nuxt-img
+          provider="imgix"
+          :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
           v-if="avatar"
           :width="AVATAR_WIDTH"
           :height="AVATAR_HEIGHT"
@@ -21,7 +23,9 @@
         </h2>
 
         <div v-if="person.biography">
-          <nuxt-picture
+          <nuxt-img
+            provider="imgix"
+            :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
             v-if="avatar"
             :width="AVATAR_WIDTH"
             :height="AVATAR_HEIGHT"

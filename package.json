@@ -1,14 +1,8 @@
 {
   "name": "nuxt-movies",
-  "private": true,
-  "author": "The Nuxt Movies authors",
-  "contributors": [
-    "Jason Ujma-Alvis <hello@jason.codes>",
-    "Addy Osmani <addyosmani@gmail.com>",
-    "Anton K. <antonkarlovskiy@outlook.com>",
-    "Pooya Parsa <pooya@nuxtjs.com>",
-    "Daniel Roe <daniel@roe.dev>"
-  ],
+  "private": false,
+  "author": "Tom Dale",
+  "license": "mit",
   "scripts": {
     "analyze": "nuxt build --analyze",
     "build": "nuxt build",
@@ -24,11 +18,6 @@
     "*.+(js|vue)": [
       "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.9",
@@ -51,6 +40,7 @@
     "tiny-cookie": "^2.3.1"
   },
   "dependencies": {
-    "ipx": "^0.6.0"
+    "ipx": "^0.6.0",
+    "vue-imgix": "^2.9.0"
   }
 }

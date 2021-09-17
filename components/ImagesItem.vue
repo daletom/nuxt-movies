@@ -5,7 +5,9 @@
       :href="image.thumbSrc"
       @click.prevent="handleGallery(index)">
       <div :class="$style.image">
-        <nuxt-picture
+        <nuxt-img
+          provider="imgix"
+          :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
           loading="lazy"
           :width="image.thumbWidth"
           :height="image.thumbHeight"

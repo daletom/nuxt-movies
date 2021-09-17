@@ -12,9 +12,11 @@
             @click="openModal">
             <CirclePlayIcon />
           </button>
-          <nuxt-picture
+          <nuxt-img
+            provider="imgix"
             :class="$style.image"
             sizes="xsmall:100vw medium:71.1vw"
+            :modifiers="{ auto : 'format,compress', ch: 'dpr,width' }"
             :alt="name"
             :src="backdrop" />
         </div>
